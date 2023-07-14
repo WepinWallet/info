@@ -1,0 +1,1283 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[개인정보처리방침]</title>
+    <style>
+      /* cspell:disable-file */
+      /* webkit printing magic: print all background colors */
+      html {
+        -webkit-print-color-adjust: exact;
+      }
+      * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen {
+        body {
+          margin: 2em auto;
+          color: rgb(55, 53, 47);
+          max-width: 700px;
+          margin: 0 auto;
+          font-family: SUIT;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      a,
+      a.visited {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+      }
+
+      h1,
+      h2,
+      h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+      }
+
+      .callout {
+        border-radius: 3px;
+        padding: 1rem;
+      }
+
+      figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+      }
+
+      figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+      }
+
+      mark {
+        background-color: transparent;
+      }
+
+      .indented {
+        padding-left: 1.5em;
+      }
+
+      hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      @media only print {
+        img {
+          max-height: 100vh;
+          object-fit: contain;
+        }
+      }
+
+      @page {
+        margin: 1in;
+      }
+
+      .collection-content {
+        font-size: 0.875rem;
+      }
+
+      .column-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .column {
+        padding: 0 1em;
+      }
+
+      .column:first-child {
+        padding-left: 0;
+      }
+
+      .column:last-child {
+        padding-right: 0;
+      }
+
+      .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+      }
+
+      .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+      }
+
+      .table_of_contents-indent-2 {
+        margin-left: 3rem;
+      }
+
+      .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+      }
+
+      .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+      }
+
+      table {
+        border-left: none;
+        border-right: none;
+      }
+
+      th,
+      td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+      }
+
+      th {
+        color: rgba(55, 53, 47, 0.6);
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+      }
+
+      li > ol:first-child,
+      li > ul:first-child {
+        margin-block-start: 0.6em;
+      }
+
+      ul > li {
+        list-style: disc;
+      }
+
+      ul.to-do-list {
+        padding-inline-start: 0;
+      }
+
+      ul.to-do-list > li {
+        list-style: none;
+      }
+
+      .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+      }
+
+      ul.toggle > li {
+        list-style: none;
+      }
+
+      ul {
+        padding-inline-start: 1.7em;
+      }
+
+      ul > li {
+        padding-left: 0.1em;
+      }
+
+      ol {
+        padding-inline-start: 1.6em;
+      }
+
+      ol > li {
+        padding-left: 0.2em;
+      }
+
+      .mono ol {
+        padding-inline-start: 2em;
+      }
+
+      .mono ol > li {
+        text-indent: -0.4em;
+      }
+
+      .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+      }
+
+      /* Indent toggle children */
+      .toggle > li > details {
+        padding-left: 1.7em;
+      }
+
+      .toggle > li > details > summary {
+        margin-left: -1.1em;
+      }
+
+      .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+      }
+
+      .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+      }
+
+      .simple-table {
+        margin-top: 1em;
+        font-size: 0.875rem;
+        empty-cells: show;
+      }
+      .simple-table td {
+        height: 29px;
+        min-width: 120px;
+      }
+
+      .simple-table th {
+        height: 29px;
+        min-width: 120px;
+      }
+
+      .simple-table-header-color {
+        background: rgb(247, 246, 243);
+        color: black;
+      }
+      .simple-table-header {
+        font-weight: 500;
+      }
+
+      time {
+        opacity: 0.5;
+      }
+
+      .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+      }
+
+      img.icon {
+        border-radius: 3px;
+      }
+
+      .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+      }
+
+      .user-icon-inner {
+        font-size: 0.8em;
+      }
+
+      .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+      }
+
+      .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+      }
+
+      .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+      }
+
+      .page-header-icon img {
+        border-radius: 3px;
+      }
+
+      .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+      }
+
+      p > .user {
+        opacity: 0.5;
+      }
+
+      td > .user,
+      td > time {
+        white-space: nowrap;
+      }
+
+      input[type='checkbox'] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+      }
+
+      p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+      }
+
+      .code,
+      code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+      }
+
+      code {
+        color: #eb5757;
+      }
+
+      .code {
+        padding: 1.5em 1em;
+      }
+
+      .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+
+      .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+      }
+
+      blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+      }
+
+      .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+      }
+
+      .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+      }
+
+      .bookmark-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+      }
+
+      .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+      }
+
+      .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+      }
+
+      .sans {
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+          'Segoe UI Emoji', 'Segoe UI Symbol';
+      }
+      .code {
+        font-family: 'SFMono-Regular', Menlo, Consolas, 'PT Mono',
+          'Liberation Mono', Courier, monospace;
+      }
+      .serif {
+        font-family: Lyon-Text, Georgia, ui-serif, serif;
+      }
+      .mono {
+        font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+      }
+      .pdf .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Twemoji', 'Noto Color Emoji',
+          'Noto Sans CJK JP';
+      }
+      .pdf:lang(zh-CN) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Twemoji', 'Noto Color Emoji',
+          'Noto Sans CJK SC';
+      }
+      .pdf:lang(zh-TW) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Twemoji', 'Noto Color Emoji',
+          'Noto Sans CJK TC';
+      }
+      .pdf:lang(ko-KR) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Twemoji', 'Noto Color Emoji',
+          'Noto Sans CJK KR';
+      }
+      .pdf .code {
+        font-family: Source Code Pro, 'SFMono-Regular', Menlo, Consolas,
+          'PT Mono', 'Liberation Mono', Courier, monospace, 'Twemoji',
+          'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+      }
+      .pdf:lang(zh-CN) .code {
+        font-family: Source Code Pro, 'SFMono-Regular', Menlo, Consolas,
+          'PT Mono', 'Liberation Mono', Courier, monospace, 'Twemoji',
+          'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+      }
+      .pdf:lang(zh-TW) .code {
+        font-family: Source Code Pro, 'SFMono-Regular', Menlo, Consolas,
+          'PT Mono', 'Liberation Mono', Courier, monospace, 'Twemoji',
+          'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+      }
+      .pdf:lang(ko-KR) .code {
+        font-family: Source Code Pro, 'SFMono-Regular', Menlo, Consolas,
+          'PT Mono', 'Liberation Mono', Courier, monospace, 'Twemoji',
+          'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+      }
+      .pdf .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji',
+          'Noto Color Emoji', 'Noto Serif CJK JP';
+      }
+      .pdf:lang(zh-CN) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji',
+          'Noto Color Emoji', 'Noto Serif CJK SC';
+      }
+      .pdf:lang(zh-TW) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji',
+          'Noto Color Emoji', 'Noto Serif CJK TC';
+      }
+      .pdf:lang(ko-KR) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji',
+          'Noto Color Emoji', 'Noto Serif CJK KR';
+      }
+      .pdf .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+      }
+      .pdf:lang(zh-CN) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+      }
+      .pdf:lang(zh-TW) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+      }
+      .pdf:lang(ko-KR) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+      }
+      .highlight-default {
+        color: rgba(55, 53, 47, 1);
+      }
+      .highlight-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+      }
+      .highlight-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+      }
+      .highlight-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+      }
+      .highlight-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+      }
+      .highlight-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+      }
+      .highlight-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+      }
+      .highlight-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+      }
+      .highlight-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+      }
+      .highlight-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+      }
+      .highlight-gray_background {
+        background: rgba(241, 241, 239, 1);
+      }
+      .highlight-brown_background {
+        background: rgba(244, 238, 238, 1);
+      }
+      .highlight-orange_background {
+        background: rgba(251, 236, 221, 1);
+      }
+      .highlight-yellow_background {
+        background: rgba(251, 243, 219, 1);
+      }
+      .highlight-teal_background {
+        background: rgba(237, 243, 236, 1);
+      }
+      .highlight-blue_background {
+        background: rgba(231, 243, 248, 1);
+      }
+      .highlight-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+      }
+      .highlight-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+      }
+      .highlight-red_background {
+        background: rgba(253, 235, 236, 1);
+      }
+      .block-color-default {
+        color: inherit;
+        fill: inherit;
+      }
+      .block-color-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+      }
+      .block-color-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+      }
+      .block-color-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+      }
+      .block-color-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+      }
+      .block-color-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+      }
+      .block-color-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+      }
+      .block-color-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+      }
+      .block-color-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+      }
+      .block-color-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+      }
+      .block-color-gray_background {
+        background: rgba(241, 241, 239, 1);
+      }
+      .block-color-brown_background {
+        background: rgba(244, 238, 238, 1);
+      }
+      .block-color-orange_background {
+        background: rgba(251, 236, 221, 1);
+      }
+      .block-color-yellow_background {
+        background: rgba(251, 243, 219, 1);
+      }
+      .block-color-teal_background {
+        background: rgba(237, 243, 236, 1);
+      }
+      .block-color-blue_background {
+        background: rgba(231, 243, 248, 1);
+      }
+      .block-color-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+      }
+      .block-color-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+      }
+      .block-color-red_background {
+        background: rgba(253, 235, 236, 1);
+      }
+      .select-value-color-interactiveBlue {
+        background-color: rgba(35, 131, 226, 0.07);
+      }
+      .select-value-color-pink {
+        background-color: rgba(245, 224, 233, 1);
+      }
+      .select-value-color-purple {
+        background-color: rgba(232, 222, 238, 1);
+      }
+      .select-value-color-green {
+        background-color: rgba(219, 237, 219, 1);
+      }
+      .select-value-color-gray {
+        background-color: rgba(227, 226, 224, 1);
+      }
+      .select-value-color-translucentGray {
+        background-color: rgba(255, 255, 255, 0.0375);
+      }
+      .select-value-color-orange {
+        background-color: rgba(250, 222, 201, 1);
+      }
+      .select-value-color-brown {
+        background-color: rgba(238, 224, 218, 1);
+      }
+      .select-value-color-red {
+        background-color: rgba(255, 226, 221, 1);
+      }
+      .select-value-color-yellow {
+        background-color: rgba(253, 236, 200, 1);
+      }
+      .select-value-color-blue {
+        background-color: rgba(211, 229, 239, 1);
+      }
+      .select-value-color-pageGlass {
+        background-color: undefined;
+      }
+      .select-value-color-washGlass {
+        background-color: undefined;
+      }
+
+      .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+
+      .checkbox-on {
+        background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E');
+      }
+
+      .checkbox-off {
+        background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E');
+      }
+
+      @media (max-width: 700px) {
+        h1{
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+        }
+        .table-scroll {
+          width: 100%;
+          overflow: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article id="7f2788ec-c74c-42fc-b6a1-0e42cce6228b" class="page sans">
+      <div class="page-body">
+        <p id="84864762-15d2-4c59-aa77-641881ae11fa" class=""></p>
+        <p id="91916064-6dbc-43ee-9dcc-6a59f865db49" class="">
+          <strong>제1조 (기본원칙)</strong>
+        </p>
+        <p id="dae5e8fa-5bcd-4980-8e6b-ddf9d46149fe" class="">
+          (1) 주식회사 아이오트러스트(이하 &quot;회사&quot;)는 정보통신서비스
+          제공자에 적용되는 개인정보보호 규정 및 관련법령을 준수합니다. 회사는
+          관련 법령에 따라 본 개인정보처리방침을 정하여 이용자(이하 “이용자”)의
+          권익을 보호하기 위해 최선을 다하고 있습니다.
+        </p>
+        <p id="a8eda987-a5cb-4481-baa8-cc81636d3f52" class="">
+          (2) 회사는 개인정보를 처리함에 있어 개인정보보호법(이하 “PIPA”),
+          정보통신망 이용촉진 및 정보보호 등에 관한 법률을 준수합니다.
+        </p>
+        <p id="6c71172f-cc94-44fe-8170-56d0ff962b29" class=""></p>
+        <p id="08e3a8a6-9ad0-4ee8-aa80-01acfb8c4b34" class="">
+          <strong>제2조 (수집항목)</strong>
+        </p>
+        <p id="5546399c-c74e-4b51-9931-c36739c392f6" class="">
+          회사는 위핀 서비스 제공을 위하여 이용자로부터 아래와 같은 개인정보를
+          수집합니다.
+        </p>
+        <div class="table-scroll">
+          <table id="fbc66050-8ac7-4055-93fd-6d120d20ff90" class="simple-table">
+            <tbody>
+              <tr id="6820ba00-25fd-4025-a55f-26b7f06a4a4f">
+                <td id="IEoq" class="">구분</td>
+                <td id="hK\I" class="">세부 항목</td>
+                <td id="vP==" class="">필수여부</td>
+                <td id="groa" class="">수집 시점</td>
+              </tr>
+              <tr id="7c2992ba-564b-4bdf-8949-91de3dfd0ff8">
+                <td id="IEoq" class="">SSO 로그인 계정 등록</td>
+                <td id="hK\I" class="">
+                  이메일, 로그인에 등록되어 있는 이름(혹은 닉네임), 사진(프로필),
+                  로그인 비밀번호 해쉬값, 암호화된 Key
+                </td>
+                <td id="vP==" class="">필수</td>
+                <td id="groa" class="">계정 등록 시</td>
+              </tr>
+              <tr id="aeed6724-c90c-4aa1-b60e-3032e1363c31">
+                <td id="IEoq" class="">서비스 이용</td>
+                <td id="hK\I" class="">지갑 상태 정보 (PIN 실패 횟수)</td>
+                <td id="vP==" class=""></td>
+                <td id="groa" class="">서비스 이용 시</td>
+              </tr>
+              <tr id="e2c150cf-c285-4f56-8090-738ea360f695">
+                <td id="IEoq" class=""></td>
+                <td id="hK\I" class="">
+                  지갑 주소(암호자산 및 NFT를 보관하는 블록체인 주소)
+                </td>
+                <td id="vP==" class="">필수</td>
+                <td id="groa" class="">비밀번호 설정 이후 자동생성</td>
+              </tr>
+              <tr id="51ffb761-c40b-4132-8633-8b2fc2787e66">
+                <td id="IEoq" class="">
+                  서비스 이용 과정에서 자동생성, 수집되는 정보
+                </td>
+                <td id="hK\I" class="">
+                  서비스 이용기록, 접속로그, 전송기록, 서비스의 안전한 동작 환경
+                  확인에 필요한 정보
+                </td>
+                <td id="vP==" class="">필수</td>
+                <td id="groa" class="">서비스 이용 시</td>
+              </tr>
+              <tr id="fcd538e9-4dfb-4f84-9a6f-137555a6d8a6">
+                <td id="IEoq" class=""></td>
+                <td id="hK\I" class="">암호자산, NFT 목록</td>
+                <td id="vP==" class="">필수</td>
+                <td id="groa" class="">서비스 이용 시</td>
+              </tr>
+              <tr id="d8506ba4-efe9-4d38-abe7-5b50858a4f6f">
+                <td id="IEoq" class=""></td>
+                <td id="hK\I" class="">이용자 설정 정보</td>
+                <td id="vP==" class="">필수</td>
+                <td id="groa" class="">서비스 이용 시</td>
+              </tr>
+              <tr id="b491c69d-4843-4f2b-bdf3-74f5c56dcfc8">
+                <td id="IEoq" class="">고객상담</td>
+                <td id="hK\I" class="">이메일 주소</td>
+                <td id="vP==" class="">필수</td>
+                <td id="groa" class="">민원 처리</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="3898739d-ea26-407d-adcd-cf3f4b8d0414" class=""></p>
+        <p id="7d2c93e4-243d-4bc1-9093-82530ac59faa" class="">
+          <strong>제3조 (개인정보 수집방법)</strong>
+        </p>
+        <p id="c0465284-5ae7-46d8-81d6-0b31b70ec1c7" class="">
+          회사는 다음과 같은 방법으로 개인정보를 수집합니다.
+        </p>
+        <div class="table-scroll">
+          <table id="a1469032-bfd4-4d85-a4ef-375a7c1d47a2" class="simple-table">
+            <tbody>
+              <tr id="43824806-6b56-42c7-87b4-352286c062a5">
+                <td id="&gt;DbD" class="">구분</td>
+                <td id=":EcY" class="" style="width: 567px">내용</td>
+              </tr>
+              <tr id="27803ac7-726e-491d-8c8b-fc92910ed2d8">
+                <td id="&gt;DbD" class="">온라인</td>
+                <td id=":EcY" class="" style="width: 567px">
+                  회사가 제공하는 서비스 대시보드 또는 위젯 및 웹과 모바일 앱을
+                  통한 수집
+                </td>
+              </tr>
+              <tr id="ae54d26e-b2c8-4cb0-a475-c59f974d2f53">
+                <td id="&gt;DbD" class=""></td>
+                <td id=":EcY" class="" style="width: 567px">
+                  SSO 로그인 시 제3자 제공 동의를 통한 수집
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="cc6f88a0-44a3-4649-804f-502e1373efe9" class=""></p>
+        <p id="c6048cd9-14b1-40cc-a328-90c4e674f576" class="">
+          <strong>제4조 (개인정보의 수집 및 이용목적)</strong>
+        </p>
+        <p id="a4d0ac90-b3ff-420b-b351-0954b7d1bf3f" class="">
+          회사는 개인정보를 다음의 목적을 위해 처리합니다. 개인정보는 다른
+          목적으로 이용되지 않으며, 이용 목적이 변경될 시에는 별도의 동의를
+          받거나 필요한 조치를 하겠습니다.
+        </p>
+        <div class="table-scroll">
+          <table id="97501936-b26c-4591-86ac-fdcc1e9e803d" class="simple-table">
+            <tbody>
+              <tr id="11e8b480-b750-4b43-a035-0fde7617a091">
+                <td id="UeNY" class="">구분</td>
+                <td id="[\@&gt;" class="">세부 항목</td>
+                <td id="@k_u" class="">이용 목적</td>
+              </tr>
+              <tr id="0a60234f-e5ba-464c-a3e0-42c4700a892c">
+                <td id="UeNY" class="">SSO 로그인 계정 등록</td>
+                <td id="[\@&gt;" class="">
+                  이메일, 로그인에 등록되어 있는 이름(혹은 닉네임), 사진(프로필),
+                  로그인 비밀번호 해쉬값, 암호화된 Key
+                </td>
+                <td id="@k_u" class="">서비스 이용 가입 및 본인 확인</td>
+              </tr>
+              <tr id="f3743822-4b9f-4caf-bcb6-541fd742e311">
+                <td id="UeNY" class="">서비스 이용</td>
+                <td id="[\@&gt;" class="">지갑 상태 정보 (PIN 실패 횟수)</td>
+                <td id="@k_u" class="">
+                  PIN이 제한 횟수를 초과할 경우 지갑 접근 권한을 제한, 이용자가
+                  생성한 지갑 주소를 대시보드에 표시
+                </td>
+              </tr>
+              <tr id="f18a66d2-d0dc-4a39-acd3-5a6e01a10655">
+                <td id="UeNY" class=""></td>
+                <td id="[\@&gt;" class="">
+                  지갑 주소(암호자산 및  NFT를 보관하는 블록체인 주소)
+                </td>
+                <td id="@k_u" class="">
+                  PIN이 제한 횟수를 초과할 경우 지갑 접근 권한을 제한, 이용자가
+                  생성한 지갑 주소를 대시보드에 표시
+                </td>
+              </tr>
+              <tr id="69400fac-9ab0-4a44-9c96-ce3f1bea77cc">
+                <td id="UeNY" class="">
+                  서비스 이용 과정에서 자동생성, 수집되는 정보(*)
+                </td>
+                <td id="[\@&gt;" class="">
+                  서비스 이용기록, 접속로그, 전송기록, 서비스의 안전한 동작 환경
+                  확인에 필요한 정보
+                </td>
+                <td id="@k_u" class="">
+                  허가 받지 않은 서비스 이용과 부정 이용 등의 탐지 및 방지
+                  본인확인, 개인환경설정, 암호자산 전송내역 확인 고지사항
+                  전달(회사의 서비스 제공기능 또는 정책 변경사항의 알림) 서비스
+                  이용기록 및 접속빈도 분석 및 서비스 이용통계에 따른 맞춤서비스
+                  제공 서비스 안정성 확보, 안전한 서비스제공, 법률 및 서비스
+                  이용약관 위반 행위 제한 등
+                </td>
+              </tr>
+              <tr id="2938465e-e9c1-4669-9692-285347f3ecb8">
+                <td id="UeNY" class=""></td>
+                <td id="[\@&gt;" class="">암호자산, NFT 목록</td>
+                <td id="@k_u" class="">
+                  허가 받지 않은 서비스 이용과 부정 이용 등의 탐지 및 방지
+                  본인확인, 개인환경설정, 암호자산 전송내역 확인 고지사항
+                  전달(회사의 서비스 제공기능 또는 정책 변경사항의 알림) 서비스
+                  이용기록 및 접속빈도 분석 및 서비스 이용통계에 따른 맞춤서비스
+                  제공 서비스 안정성 확보, 안전한 서비스제공, 법률 및 서비스
+                  이용약관 위반 행위 제한 등
+                </td>
+              </tr>
+              <tr id="b73650b1-ffee-4870-976e-208341b4e111">
+                <td id="UeNY" class=""></td>
+                <td id="[\@&gt;" class="">이용자 설정 정보</td>
+                <td id="@k_u" class="">
+                  허가 받지 않은 서비스 이용과 부정 이용 등의 탐지 및 방지
+                  본인확인, 개인환경설정, 암호자산 전송내역 확인 고지사항
+                  전달(회사의 서비스 제공기능 또는 정책 변경사항의 알림) 서비스
+                  이용기록 및 접속빈도 분석 및 서비스 이용통계에 따른 맞춤서비스
+                  제공 서비스 안정성 확보, 안전한 서비스제공, 법률 및 서비스
+                  이용약관 위반 행위 제한 등
+                </td>
+              </tr>
+              <tr id="a1c888c7-de19-4079-a32a-0cac6e58f0d6">
+                <td id="UeNY" class="">고객상담</td>
+                <td id="[\@&gt;" class="">이메일 주소</td>
+                <td id="@k_u" class="">
+                  고객 상담, 불만처리 등 민원처리, 분쟁조정 해결을 위한 기록 보존
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="660c5ce6-f7e0-4f44-8329-81565475d89f" class=""></p>
+        <p id="9f9b48ec-7f8b-47ff-9aa1-3e8042ba9bf7" class="">
+          <strong>제5조 (개인정보의 보유 및 이용기간)</strong>
+        </p>
+        <div class="table-scroll">
+          <table id="6f615279-9aed-434a-a14c-52859ad8a32e" class="simple-table">
+            <tbody>
+              <tr id="e14b0022-6c7b-446b-9cd3-de01bc8f2d05">
+                <td id="}&gt;L_" class="">구분</td>
+                <td id="gUQp" class="">세부 항목</td>
+                <td id="E\Ib" class="" style="width: 208.3125px">이용 기간</td>
+              </tr>
+              <tr id="f0538216-f883-4aa0-9946-b54d54b9af7d">
+                <td id="}&gt;L_" class="">SSO 로그인 계정 등록</td>
+                <td id="gUQp" class="">
+                  이메일, 로그인에 등록되어 있는 이름(혹은 닉네임), 사진(프로필),
+                  로그인 비밀번호 해쉬값, 암호화된 Key
+                </td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+              <tr id="312d4878-8bad-48ee-bede-d446ce302200">
+                <td id="}&gt;L_" class="">서비스 이용</td>
+                <td id="gUQp" class="">지갑 상태 정보 (PIN 실패 횟수)</td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+              <tr id="8161facb-695e-4cc3-b1f8-fead32af936f">
+                <td id="}&gt;L_" class=""></td>
+                <td id="gUQp" class="">
+                  지갑 주소(암호자산 및 NFT를 보관하는 블록체인 주소)
+                </td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+              <tr id="8de7d76d-ba7c-4caa-8f23-5a6c86e570d6">
+                <td id="}&gt;L_" class="">
+                  서비스 이용 과정에서 자동생성, 수집되는 정보
+                </td>
+                <td id="gUQp" class="">
+                  서비스 이용기록,접속로그, 전송기록, 서비스의 안전한 동작 환경
+                  확인에 필요한 정보
+                </td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+              <tr id="1bb4e9b8-6dfb-4da8-9bc2-c0a87baacc56">
+                <td id="}&gt;L_" class=""></td>
+                <td id="gUQp" class="">암호자산, NFT 목록</td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+              <tr id="171949ab-c8d8-4666-b375-72a3f7a67be1">
+                <td id="}&gt;L_" class=""></td>
+                <td id="gUQp" class="">이용자 설정 정보</td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+              <tr id="e29c1677-221e-40b9-ba9c-1c6d01cccbcf">
+                <td id="}&gt;L_" class="">고객상담</td>
+                <td id="gUQp" class="">이메일 주소</td>
+                <td id="E\Ib" class="" style="width: 208.3125px">
+                  회원 탈퇴시까지
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="eed3bfc3-a48d-49d7-b768-8e809c362376" class=""></p>
+        <p id="49a2937c-9330-42b5-be93-d528e5da74cf" class="">
+          <strong>제6조 (개인정보의 파기절차 및 방법)</strong>
+        </p>
+        <p id="e085cb96-00e4-49fe-96c4-c59b487ca87b" class="">
+          (1) 개인정보가 불필요하게 되었을 때(개인정보의 처리완료, 서비스의
+          폐지, 사업의 종료를 포함) 아래 제3항에 따라 안전하게 처리합니다.
+        </p>
+        <p id="ae85fb19-f28c-4dbe-81be-ee617dab02ab" class="">
+          (2) 회사는 파기 사유가 발생한 개인정보를 식별하고, 개인정보
+          보호책임자의 승인을 받아 개인정보를 파기합니다.
+        </p>
+        <p id="834b903b-a068-48fa-b95b-76b52e118611" class="">
+          (3) 회사는 다음의 방법으로 개인정보를 파기합니다.
+        </p>
+        <p id="c41e1947-22bc-4d64-84e8-287d203852af" class="">
+          종이에 기록·저장된 개인정보 : 분쇄기로 분쇄하거나 소각을 통하여 파기
+        </p>
+        <p id="a3db22d8-f8a0-44ff-997e-71bd8755e499" class="">
+          전자적 파일 형태로 저장된 개인정보 : 기록을 재생할 수 없도록 영구 삭제
+        </p>
+        <p id="708c3af9-edeb-4397-a9cd-b5883d3925d9" class=""></p>
+        <p id="9faeb824-3677-4329-b70e-19394f993d08" class="">
+          <strong
+            >제7조 (개인정보 자동수집 장치의 설치. 운영 및 그 거부에 관한
+            사항)</strong
+          >
+        </p>
+        <p id="36ee5057-2ab9-4f15-8155-b35bf3e6509c" class="">
+          (1) 회사는 이용자의 서비스 편의를 제공하기 위해 이용정보를 저장하고
+          수시로 불러오는 ‘쿠키(cookie)’를 사용합니다. 쿠키는 웹사이트가 고객의
+          컴퓨터 브라우저(인터넷 익스플로러 등)에 저장되는 소량의 정보입니다.
+          쿠키는 이용자의 컴퓨터는 식별하지만 이용자를 개인적으로 식별하진
+          않습니다.
+        </p>
+        <p id="0f8e1691-42f2-450a-a67c-f10a84b1cec5" class="">
+          (2) 회사는 다음과 같은 목적을 위해 쿠키를 사용합니다.
+        </p>
+        <p id="8f1fa76a-d7c3-4be0-845a-218478d63281" class="">
+          쿠키를 통해 이용자가 선호하는 설정 등을 저장하여 이용자에게 더욱 빠른
+          웹 환경을 지원하며, 편리한 이용을 위해 서비스 개선에 활용합니다. 이를
+          통해 이용자는 더욱 손쉽게 서비스를 이용할 수 있게 됩니다.
+        </p>
+        <p id="05055609-a67f-49e7-a481-497773ef3357" class="">
+          (3) 쿠키의 설치. 운영 및 거부
+        </p>
+        <p id="03101cf8-331b-48af-8b83-61cf432b30f1" class="">
+          대부분의 브라우저는 초기에 쿠키를 허용하도록 설정되어 있습니다.
+          이용자는 쿠키를 거부하도록 브라우저를 설정하고 이용자가 원하는 대로
+          쿠키를 제어 또는 삭제할 수 있습니다. 이용자는 장치에 이미 있는 모든
+          쿠키를 삭제할 수 있으며 이용자는 대부분의 브라우저에서 이러한 쿠키가
+          배치되지 않도록 설정할 수 있습니다. 이용자는 웹사이트를 방문할 때마다
+          일부 기본 설정을 수동으로 조정해야 할 수 있으며 이용자가 쿠키를
+          수락하지 않으면 일부 서비스 및 기능이 작동하지 않을 수 있음을 인지해야
+          합니다.
+        </p>
+        <p id="9012f797-652f-4acb-8d2d-1b097e5a65dd" class="">
+          (4) 회사는 또한 유사 기술을 통해 다음과 같은 정보를 수집합니다.
+        </p>
+        <ul id="c5b00c85-5164-4807-a86a-d00152192cf6" class="bulleted-list">
+          <li style="list-style-type: disc">
+            로그 및 사용 데이터 : 이 로그 데이터에는 귀하의 IP 주소, 장치 정보,
+            브라우저 유형, 설정 및 서비스에서의 활동에 대한 정보가 포함될 수
+            있습니다. (장치 이벤트 정보 및 하드웨어 설정)
+          </li>
+        </ul>
+        <ul id="7694074f-b2eb-4994-a462-c0583d170d9c" class="bulleted-list">
+          <li style="list-style-type: disc">
+            장치 데이터 : 서비스에 액세스하기 위해 사용하는 컴퓨터, 전화, 태블릿
+            또는 기타 장치에 대한 정보와 같은 장치 데이터를 수집합니다. 사용하는
+            기기에 따라 이 기기 데이터에는 IP 주소(또는 프록시 서버), 기기 및
+            애플리케이션 식별 번호, 위치, 브라우저 유형, 하드웨어 모델, 인터넷
+            서비스 제공업체 및/또는 이동통신사, 운영 체제, 시스템 구성 정보,
+            언어 기본 설정, 국가, 위치 등이 포함됩니다.
+          </li>
+        </ul>
+        <ul id="59c75d5e-b44e-48a1-a8da-c7e5f5682bd8" class="bulleted-list">
+          <li style="list-style-type: disc">
+            위치 데이터 : 회사는 정확하거나 부정확할 수 있는 장치의 위치 정보와
+            같은 위치 데이터를 수집합니다. 수집하는 정보의 양은 귀하가 서비스에
+            액세스하는 데 사용하는 장치의 유형과 설정에 따라 다릅니다. 예를
+            들어, 당사는 GPS 및 기타 기술을 사용하여 이용자의 현재 위치(귀하의
+            IP 주소 기반)를 알려주는 지리적 위치 데이터를 수집할 수 있습니다.
+            정보에 대한 액세스를 거부하거나 장치에서 위치 설정을 비활성화하여 이
+            정보를 수집하는 것을 거부할 수 있습니다.
+          </li>
+        </ul>
+        <p id="fef7c1e5-6e0a-419b-ac45-f9b46a34f877" class=""></p>
+        <p id="853d5833-7587-4b57-b932-185b090f9548" class="">
+          <strong>제8조 (개인정보의 관리적, 기술적 보호 대책)</strong>
+        </p>
+        <p id="8ce7c87a-a3c2-4d43-a2b9-4e77fef2c4ab" class="">
+          회사는 이용자들의 개인정보의 안정성을 확보하기 위해 다음과 같은 조치를
+          취하고 있습니다.
+        </p>
+        <p id="b72d3886-8513-45b9-a9bc-ea133643cda5" class="">
+          (1) 관리적 조치 : 내부 관리계획수립 및 시행. 정기적 직원 교육 등
+        </p>
+        <p id="4ae7031b-a9b2-4ed6-af78-978c351b8d33" class="">
+          (2) 기술적 조치 : 개인정보처리시스템 등의 접근권한 관리, 접근 통제
+          시스템 설치, 고유식별정보 등의 암호화, 보안프로그램 설치
+        </p>
+        <p id="97ce2182-679d-464f-8bf7-6602591ea5e1" class="">
+          (3) 물리적 조치 : 전산실, 자료보관실 등의 접근 통제
+        </p>
+        <p id="4d333aef-9a38-482f-a163-2b987531cc9f" class=""></p>
+        <p id="feb95116-9628-403c-94c1-de98d9ad484e" class="">
+          <strong>제9조 (개인정보 보호책임자)</strong>
+        </p>
+        <p id="635a6895-7d4d-42d8-8975-17ff76082270" class="">
+          회사는 회원의 개인정보를 보호하고 개인정보와 관련한 불만사항 및 문의를
+          처리하고 개인정보 열람청구를 신청할 수 있도록 하기 위하여 아래와 같이
+          관련 부서 및 개인정보보호책임자를 지정하고 있습니다.
+        </p>
+        <div class="table-scroll">
+          <table id="b30a1e52-87cb-4e4b-8117-23a832bdeaf6" class="simple-table">
+            <tbody>
+              <tr id="de2c1a96-52c2-464f-aef3-ae59152932cc">
+                <td id="TodE" class="" style="width: 246.53125px">
+                  개인정보보호책임자
+                </td>
+                <td id="\jyu" class="" style="width: 482px">
+                  이름 : 유민호 직책 : 개인정보 보호 책임자 전화번호 :
+                  02-6959-3559 이메일 : wepin.contact@iotrust.kr
+                </td>
+              </tr>
+              <tr id="ab42a2c9-e8af-42db-bbc5-f641693ba0eb">
+                <td id="TodE" class="" style="width: 246.53125px">
+                  개인정보 고충처리 및 개인정보 열람청구업무 담당부서
+                </td>
+                <td id="\jyu" class="" style="width: 482px">
+                  위핀 고객지원팀 전화번호 : 02-6959-3559 이메일 :
+                  wepin.contact@iotrust.kr
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="5320e350-94ec-4497-a3a9-16116214af3c" class=""></p>
+        <p id="22bf9b65-9bb5-459d-81ed-605d464af87c" class="">
+          <strong>제10조 (권익침해 구제방법)</strong>
+        </p>
+        <p id="e1891340-6990-41f5-8730-c5b756b10934" class="">
+          권익침해 구제방법 정보주체는 아래의 기관에 대하여 개인정보 침해에 대한
+          피해구제, 상담 등을 문의하실 수 있습니다.
+        </p>
+        <p id="4fc4989d-fede-4a26-be1d-bf441737fcd8" class="">
+          &lt;아래의 기관은 회사와 별개의 기관으로서, 회사의 자체적인 개인정보
+          불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이
+          필요하시면 문의하여 주시기 바랍니다&gt;
+        </p>
+        <p id="b1fec744-1b4b-4b7a-aa3e-0eb6b3900039" class=""></p>
+        <p id="d2934dc8-26f5-4481-9a53-ac6f2515a03b" class="">
+          개인정보 침해신고센터 (한국인터넷진흥원 운영)
+        </p>
+        <ul id="d284df99-87dc-415c-a8ab-5cb586de70da" class="bulleted-list">
+          <li style="list-style-type: disc">
+            소관업무 : 개인정보 침해사실 신고, 상담 신청
+          </li>
+        </ul>
+        <ul id="da1483c6-b070-443a-b4c3-641fd4a15271" class="bulleted-list">
+          <li style="list-style-type: disc">홈페이지 : privacy.kisa.or.kr</li>
+        </ul>
+        <ul id="da39ee03-17a0-43bc-9215-116335331f98" class="bulleted-list">
+          <li style="list-style-type: disc">전화 : (국번없이) 118</li>
+        </ul>
+        <ul id="23b2ab97-ec96-4f71-ae24-da1d74a1e1cd" class="bulleted-list">
+          <li style="list-style-type: disc">
+            주소 : (58324) 전남 나주시 진흥길 9 (빛가람동 301-2) 3층
+          </li>
+        </ul>
+        <p id="e06193f1-b31f-44a0-89eb-0fdd9dd19369" class=""></p>
+        <p id="9a01d3c5-ba68-4eff-95f0-fba000f1d919" class="">
+          개인정보 분쟁조정위원회
+        </p>
+        <ul id="bb7df5d4-f19c-45f4-b693-843e3d021812" class="bulleted-list">
+          <li style="list-style-type: disc">
+            소관업무 : 개인정보 분쟁조정신청, 집단분쟁조정(민사적 해결)
+          </li>
+        </ul>
+        <ul id="103dc525-04b8-4c5f-af81-3e149c54be08" class="bulleted-list">
+          <li style="list-style-type: disc">
+            홈페이지 : <a href="http://www.koprco.go.kr/">koprco.go.kr</a>
+          </li>
+        </ul>
+        <ul id="fef75df9-3920-4e59-8057-55165f12574b" class="bulleted-list">
+          <li style="list-style-type: disc">전화 : (국번없이) 1833-6972</li>
+        </ul>
+        <ul id="c2e51283-62e7-4a86-a954-44933126ca38" class="bulleted-list">
+          <li style="list-style-type: disc">
+            주소 : (03171) 서울특별시 종로구 세종대로 209 정부서울청사 12층
+          </li>
+        </ul>
+        <p id="790f9254-3123-4e54-8d59-0861f7f17878" class=""></p>
+        <p id="7d638e75-e03f-4fe2-8eb2-d6a3494cba2a" class="">
+          대검찰청 사이버범죄수사단 02-3480-3574(<a href="http://www.spo.go.kr/"
+            >www.spo.go.kr</a
+          >)
+        </p>
+        <p id="fa67720e-010a-4911-8ef1-ecf983f058d3" class="">
+          경찰청 사이버안전국 : 182 (<a href="http://cyberbureau.police.go.kr/"
+            >http://cyberbureau.police.go.kr</a
+          >)
+        </p>
+        <p id="9e5f5c51-913a-4f02-b631-3d35811bb610" class=""></p>
+        <p id="37833027-49d4-447f-8086-4fcdc889b6e0" class="">
+          공고일자 : 2023년 3월 1일
+        </p>
+        <p id="bff8728b-7dbf-4e74-8059-2b3bfee85ec2" class="">
+          시행일자 : 2023년 3월 1일
+        </p>
+        <p id="a8ad7756-d39a-494d-886d-d73d2c4d404d" class="">끝.</p>
+        <p id="62f801be-f954-4f17-aa5b-96db04307a3e" class=""></p>
+      </div>
+    </article>
+  </body>
+</html>
